@@ -3,6 +3,8 @@ import "./button.css";
 
 export default class Button extends Component {
   render() {
-    return <i className={`btn ${this.props.classes}`} />;
+    return (
+      <i className={`btn ${this.props.classes}`} onClick={this.props.onClick} />
+    );
   }
 }

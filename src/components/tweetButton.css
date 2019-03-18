@@ -1,0 +1,8 @@
+.fa-twitter {
+  color: #1da1f3;
+}
+
+.fa-twitter:hover {
+  color: #1da1f3;
+  filter: brightness(0.85);
+}
