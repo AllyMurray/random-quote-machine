@@ -1,5 +1,7 @@
 .fa-twitter {
   color: #1da1f3;
+  cursor: pointer;
+  margin-left: 1rem;
 }
 
 .fa-twitter:hover {

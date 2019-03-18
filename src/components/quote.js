@@ -5,8 +5,8 @@ export default class Quote extends Component {
     return (
       <div>
         <i className="fas fa-quote-left" />
-        <p>{this.props.text}</p>
-        <p>{this.props.author ? `-${this.props.author}` : ""}</p>
+        <p id="text">{this.props.text}</p>
+        <p id="author">{this.props.author ? `-${this.props.author}` : ""}</p>
       </div>
     );
   }

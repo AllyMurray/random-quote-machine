@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./quoteBox.css";
 import Quote from "./quote";
-import TweetButton from "./tweetButton";
+import TweetQuote from "./tweetQuote";
 import RefreshButton from "./refreshButton";
 import Spinner from "./spinner";
 
@@ -68,7 +68,7 @@ export default class QuoteBox extends Component {
             isLoading={this.state.quote.isLoading}
             onClick={this.handleRefreshClick}
           />
-          <TweetButton tweet={this.state.quote.text} />
+          <TweetQuote tweet={this.state.quote.text} />
         </div>
       </div>
     );

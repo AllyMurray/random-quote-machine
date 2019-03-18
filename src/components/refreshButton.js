@@ -6,6 +6,7 @@ export default class refreshButton extends Component {
   render() {
     return (
       <Button
+        id="new-quote"
         classes={`fas fa-sync${
           this.props.isLoading ? " fa-sync--is-loading" : ""
         }`}
