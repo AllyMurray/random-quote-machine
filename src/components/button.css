@@ -1,0 +1,11 @@
+.btn {
+  /* color: rgb(0, 0, 0, 0.54); */
+  color: #1da1f3;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.btn:hover {
+  /* color: #1da1f3; */
+  filter: brightness(85%);
+}
