@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./quoteBox.css";
 import Quote from "./quote";
 import TweetQuote from "./tweetQuote";
-import RefreshButton from "./refreshButton";
+import RefreshQuote from "./refreshQuote";
 import Spinner from "./spinner";
 
 const quoteUrl =
@@ -64,7 +64,7 @@ export default class QuoteBox extends Component {
         )}
         <hr />
         <div className="quote-box__footer">
-          <RefreshButton
+          <RefreshQuote
             isLoading={this.state.quote.isLoading}
             onClick={this.handleRefreshClick}
           />

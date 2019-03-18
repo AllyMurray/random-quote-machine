@@ -1,3 +1,13 @@
+.fa-sync {
+  color: rgb(0, 0, 0, 0.54);
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.fa-sync:hover {
+  color: rgb(0, 0, 0, 0.87);
+}
+
 .fa-sync--is-loading {
   animation: rotate 2s linear infinite;
 }

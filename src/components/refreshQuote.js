@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-import Button from "./button";
-import "./refreshButton.css";
+import "./refreshQuote.css";
 
 export default class refreshButton extends Component {
   render() {
     return (
-      <Button
+      <i
         id="new-quote"
-        classes={`fas fa-sync${
+        className={`fas fa-sync${
           this.props.isLoading ? " fa-sync--is-loading" : ""
         }`}
         onClick={this.props.onClick}
