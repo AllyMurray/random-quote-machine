@@ -1,0 +1,9 @@
+.fa-quote-left {
+  color: #1da1f3;
+  margin-right: 0.5rem;
+}
+
+.author {
+  color: rgb(0, 0, 0, 0.54);
+  font-size: calc(8px + 2vmin);
+}
