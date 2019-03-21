@@ -16,8 +16,7 @@ export default class QuoteBox extends Component {
       initialLoad: true,
       quote: {
         author: "",
-        text: "",
-        isLoading: false
+        text: ""
       }
     };
   }
@@ -41,13 +40,16 @@ export default class QuoteBox extends Component {
         })
       )
       .catch(function(error) {
-        this.setState({ quote: { isLoading: false }, initialLoad: false });
+        this.setState({
+          initialLoad: false,
+          quote: { ...this.state.quote, isLoading: true }
+        });
         console.error("There was a problem fetching a new quote: \n", error);
       });
   }
 
   handleRefreshClick = () => {
-    this.setState({ quote: { isLoading: true } });
+    this.setState({ quote: { ...this.state.quote, isLoading: true } });
     this.getNewQuote();
   };
 
