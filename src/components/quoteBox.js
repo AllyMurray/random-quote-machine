@@ -25,7 +25,7 @@ export default class QuoteBox extends Component {
     this.getNewQuote();
   }
 
-  getNewQuote() {
+  getNewQuote = () => {
     // New quote is loading
     fetch(quoteUrl)
       .then(response => response.json())
@@ -46,7 +46,7 @@ export default class QuoteBox extends Component {
         });
         console.error("There was a problem fetching a new quote: \n", error);
       });
-  }
+  };
 
   handleRefreshClick = () => {
     this.setState({ quote: { ...this.state.quote, isLoading: true } });
