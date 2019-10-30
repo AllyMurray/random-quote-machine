@@ -39,7 +39,7 @@ export default class QuoteBox extends Component {
           initialLoad: false
         })
       )
-      .catch(function(error) {
+      .catch(error => {
         this.setState({
           initialLoad: false,
           quote: { ...this.state.quote, isLoading: true }
