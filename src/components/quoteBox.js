@@ -44,7 +44,7 @@ export default class QuoteBox extends Component {
       .catch(error => {
         this.setState({
           initialLoad: false,
-          quote: { ...this.state.quote, isLoading: true }
+          quote: { ...this.state.quote, isLoading: false }
         });
         console.error("There was a problem fetching a new quote: \n", error);
       });
