@@ -1,9 +1,11 @@
-import React, { Component } from "react";
 import "./quoteBox.css";
+
+import React, { Component } from "react";
+
 import Quote from "./quote";
-import TweetQuote from "./tweetQuote";
 import RefreshQuote from "./refreshQuote";
 import Spinner from "./spinner";
+import TweetQuote from "./tweetQuote";
 
 const quoteUrl =
   // Forismatic doesn't send the Access-Control-Allow-Origin response header, so make the request through a CORS proxy.
