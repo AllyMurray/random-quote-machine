@@ -28,9 +28,12 @@ export default class QuoteBox extends Component {
   }
 
   getNewQuote = () => {
-    // New quote is loading
+    // The forismatic API tries to escape single qutoes resulting
+    // in invalid JSON. We must handle this to avoid the following error:
+    // JSON.parse: bad escaped character
     fetch(quoteUrl)
-      .then(response => response.json())
+      .then(response => response.text())
+      .then(text => JSON.parse(text.replace(/\\/g, "")))
       .then(data =>
         this.setState({
           quote: {
