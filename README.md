@@ -4,6 +4,17 @@ This project was built as part of the [FreeCodeCamp curriculum](https://www.free
 
 https://allymurray.github.io/random-quote-machine
 
+## Objective
+Create a web app that displays a random quote on first load, when a button is clicked display a new random quote. Allow tweeting the current quote by pressing a button. See the [user stories](#user-stories) for more details.
+
+## Implementation details
+I chose to use JS classes to build the React components, data is retrieved using the Fetch API. 
+
+The Forismatic API is used to generate random quotes, it doesn't send the Access-Control-Allow-Origin response header, so make the request is made through the CORS Anywhere proxy. The API also tries to escape single quotes resulting in invalid JSON, so before parsing the JSON all backslashes in the response text must be removed.
+
+The tweet button is an anchor element with the target "_blank" to open in a new tab. The relationship of the linked URL is "noopener noreferrer", "noopener" ensures the tab runs in a new process and "noreferrer" avoids exploitation of the window.opener API.
+
+
 ## Built with
 
 - [React](https://reactjs.org)
@@ -25,7 +36,7 @@ https://allymurray.github.io/random-quote-machine
 10. I can tweet the current quote by clicking on the #tweet-quotea element. This a element should include the "twitter.com/intent/tweet" path in its href attribute to tweet the current quote.
 11. The #quote-box wrapper element should be horizontally centered. Please run tests with browser's zoom level at 100% and page maximized.
 
-## Available Scripts
+## Available scripts
 
 In the project directory, you can run:
 
