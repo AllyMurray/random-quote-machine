@@ -5,15 +5,16 @@ This project was built as part of the [FreeCodeCamp curriculum](https://www.free
 https://allymurray.github.io/random-quote-machine
 
 ## Objective
+
 Create a web app that displays a random quote on first load, when a button is clicked display a new random quote. Allow tweeting the current quote by pressing a button. See the [user stories](#user-stories) for more details.
 
 ## Implementation details
-I chose to use JS classes to build the React components, data is retrieved using the Fetch API. 
 
-The Forismatic API is used to generate random quotes, it doesn't send the Access-Control-Allow-Origin response header, so make the request is made through the CORS Anywhere proxy. The API also tries to escape single quotes resulting in invalid JSON, so before parsing the JSON all backslashes in the response text must be removed.
+I chose to use JS classes to build the React components, data is retrieved using the Fetch API.
 
-The tweet button is an anchor element with the target "_blank" to open in a new tab. The relationship of the linked URL is "noopener noreferrer", "noopener" ensures the tab runs in a new process and "noreferrer" avoids exploitation of the window.opener API.
+The Forismatic API is used to generate random quotes, it doesn't send the Access-Control-Allow-Origin response header, so the request is made through the CORS Anywhere proxy. The API also tries to escape single quotes resulting in invalid JSON, so before parsing the JSON all backslashes in the response text must be removed.
 
+The tweet button is an anchor element with the target "\_blank" to open in a new tab. The relationship of the linked URL is "noopener noreferrer", "noopener" ensures the tab runs in a new process and "noreferrer" avoids exploitation of the window.opener API.
 
 ## Built with
 
@@ -24,6 +25,7 @@ The tweet button is an anchor element with the target "_blank" to open in a new 
 - [CORS Anywhere Proxy](https://cors-anywhere.herokuapp.com)
 
 ## User stories
+
 1. I can see a wrapper element with a corresponding id="quote-box".
 2. Within #quote-box, I can see an element with a corresponding id="text".
 3. Within #quote-box, I can see an element with a corresponding id="author".
