@@ -1,4 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Random Quote Machine
+
+This project was built as part of the [FreeCodeCamp curriculum](https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine).
+
+https://allymurray.github.io/random-quote-machine
+
+## Built with
+
+- [React](https://reactjs.org)
+- [Create React App](https://reactjs.org/docs/create-a-new-react-app.html)
+- [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+- [Forismatic quotes and expressions API](https://forismatic.com/en/api)
+- [CORS Anywhere Proxy](https://cors-anywhere.herokuapp.com)
+
+## User stories
+1. I can see a wrapper element with a corresponding id="quote-box".
+2. Within #quote-box, I can see an element with a corresponding id="text".
+3. Within #quote-box, I can see an element with a corresponding id="author".
+4. Within #quote-box, I can see a clickable element with a corresponding id="new-quote".
+5. Within #quote-box, I can see a clickable a element with a corresponding id="tweet-quote".
+6. On first load, my quote machine displays a random quote in the element with id="text".
+7. On first load, my quote machine displays the random quote's author in the element with id="author".
+8. When the #new-quote button is clicked, my quote machine should fetch a new quote and display it in the #text element.
+9. My quote machine should fetch the new quote's author when the #new-quote button is clicked and display it in the #author element.
+10. I can tweet the current quote by clicking on the #tweet-quotea element. This a element should include the "twitter.com/intent/tweet" path in its href attribute to tweet the current quote.
+11. The #quote-box wrapper element should be horizontally centered. Please run tests with browser's zoom level at 100% and page maximized.
 
 ## Available Scripts
 
@@ -36,33 +61,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
